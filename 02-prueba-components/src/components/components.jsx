@@ -1,16 +1,17 @@
 import { useState } from "react"
 
-export function Prueba () {
-    const avatar = 'https://i.imgur.com/YcP0tik.jpeg';
-    const description = 'imagen profile a shark';
+export function Prueba ({person, description, size}) {
+    const imgSrc = `https://unavatar.io/${person}`
     return (
         <article>
             <img
-                src={avatar}
+                src={imgSrc}
                 alt={description} 
-                className="pictureProfile"/>
+                className="esta es la imagen de"
+                width={size}
+                height={size}/>
             <ul>
-                <li>probando 1</li>
+                <li>{person}</li>
                 <li>probando 2</li>
                 <li>probando 3</li>
             </ul>
