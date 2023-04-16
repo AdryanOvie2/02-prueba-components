@@ -1,12 +1,10 @@
-import { useState } from 'react'
 import './App.css'
+import { Prueba } from './components/components.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export function App() {
   return (
-    <h1>Hola AO2</h1>
+    <>
+      <Prueba/>
+    </>
   )
 }
-
-export default App
